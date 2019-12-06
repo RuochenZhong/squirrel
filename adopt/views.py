@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .forms import SquirrelForm
 from adopt.models import show
 from django.contrib import messages
-import random
+import random #for random
 
 def all_squirrels(request):
     squirrels = list(show.objects.all())
